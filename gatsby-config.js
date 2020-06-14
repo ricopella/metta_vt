@@ -1,20 +1,20 @@
 module.exports = {
     siteMetadata: {
-        title: `Metta Healing Arts and Wellness`,
-        description: `Metta Healing Arts and Wellness offers professional massage and bodywork in Burlington, Vermont.`,
         author: `@ricopella`,
+        description: `Metta Healing Arts and Wellness offers professional massage and bodywork in Burlington, Vermont.`,
+        title: `Metta Healing Arts and Wellness`,
+        lang: `en`,
+        siteUrl: `https://mettavt.com`,
+        keywords: [`massage therapy`],
+        pageTitle: 'Massage Therapy in Burlington, Vermont'
     },
-    plugins: [
-        `gatsby-plugin-react-helmet`,
-        {
+    plugins: [{
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
                 path: `${__dirname}/src/images`,
             },
         },
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -24,8 +24,13 @@ module.exports = {
                 background_color: `#663399`,
                 theme_color: `#663399`,
                 display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+                // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
             },
         },
+        `gatsby-plugin-react-helmet`,
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        `gatsby-plugin-emotion`,
+        `gatsby-plugin-typescript`,
     ],
 }

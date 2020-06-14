@@ -1,10 +1,6 @@
-import Layout from '../components/layout'
+import Home from '../containers/Home'
 import React from 'react'
 
-const IndexPage = () => (
-  <Layout>
-    <div>Content Will Go Here</div>
-  </Layout>
-);
+const IndexPage = () => <Home />
 
-export default IndexPage;
+export default IndexPage
