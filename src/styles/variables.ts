@@ -3,7 +3,7 @@ import { DimensionsType } from '../types'
 export const BORDERS = {
   medium: `0 0 0.25rem 0.25rem`,
   large: `0.625rem 0.625rem 0 0`,
-};
+}
 
 export const BREAKPOINTS = {
   xs: 0,
@@ -16,41 +16,41 @@ export const BREAKPOINTS = {
   tabletPro: `64rem`,
   xl: 1200,
   resumeFirstBreak: `53.125rem`,
-};
+}
 
 export const COLORS = {
-  brand: '#663399',
+  brand: "#663399",
   darkBackground: `#121212`,
   lighterDarkBackground: `#373737`,
   darkActionColors: `#cac4f5`,
-  header: 'rgba(255,255,255, .5)',
-  lilac: '#9d7cbf',
-  accent: '#ffb238',
-  success: '#37b635',
-  warning: '#ec1818',
+  header: "rgba(255,255,255, .5)",
+  lilac: "#9d7cbf",
+  accent: "#ffb238",
+  success: "#37b635",
+  warning: "#ec1818",
   ui: {
-    bright: '#e0d6eb',
-    light: '#f5f3f7',
-    whisper: '#fbfafc',
+    bright: "#e0d6eb",
+    light: "#f5f3f7",
+    whisper: "#fbfafc",
   },
-  code: '#fcf6f0',
+  code: "#fcf6f0",
   homeBanner: `#275573`,
   gray: {
-    dark: 'hsla(270, 17.119554496%, 0%, 0.92)',
-    copy: 'hsla(270, 15.797828016000002%, 0%, 0.88)',
-    calm: 'rgba(0, 0, 0, 0.54)',
-    light: '#737272',
+    dark: "hsla(270, 17.119554496%, 0%, 0.92)",
+    copy: "hsla(270, 15.797828016000002%, 0%, 0.88)",
+    calm: "rgba(0, 0, 0, 0.54)",
+    light: "#737272",
   },
-  white: '#fff',
-  black: '#000',
-  limeGreen: '#43b743',
-  terminalHeader: '#e4e3e5',
-  terminalBackground: '#4c4961',
-  terminalActionClose: '#f96256',
-  terminalActionMinimize: '#fdbc3d',
-  terminalActionExpand: '#2dbb41',
-  backgroundColor: '#f6f9fc',
-  teal: '#35feff',
+  white: "#fff",
+  black: "#000",
+  limeGreen: "#43b743",
+  terminalHeader: "#e4e3e5",
+  secondaryBackground: "#4c4961",
+  terminalActionClose: "#f96256",
+  terminalActionMinimize: "#fdbc3d",
+  terminalActionExpand: "#2dbb41",
+  backgroundColor: "#f6f9fc",
+  teal: "#35feff",
   palette: {
     eerieBlack: `#211A1D`,
     hanPurple: `#6320EE`,
@@ -59,7 +59,7 @@ export const COLORS = {
     pastelGray: `#CAD5CA`,
     avalanche: `#a4a599`,
   },
-};
+}
 
 export const DIMENSIONS: DimensionsType = {
   fontSize: {
@@ -82,7 +82,7 @@ export const DIMENSIONS: DimensionsType = {
       height: `10rem`,
     },
   },
-};
+}
 
 export const FONTS = {
   sansSerif:
@@ -90,29 +90,29 @@ export const FONTS = {
   serif: 'Georgia, "Times New Roman", Times, serif',
   monospace:
     'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace',
-};
+}
 
 export const FONT_WIDTHS = {
   SEMI_BOLD: 600,
-};
+}
 
 export const HEIGHTS = {
   CONTACT: 300,
   FOOTER: 60,
   HEADER: `5rem`,
   MOBILE_MENU: `21.875rem`,
-};
+}
 
 export const SHADOWS = {
   box: `0 3.125rem 6.25rem rgba(50, 50, 93, 0.05),
     0 0.9375rem 2.1875rem rgba(50, 50, 93, 0.1), 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);`,
   header: `rgba(0, 0, 0, 0.1) 0 0.125rem 0.25rem 0`,
-};
+}
 
 export const SLIDE_IN_ANIMATION_OPTIONS = {
-  animate: 'visible',
-  exit: 'exit',
-  initial: 'hidden',
+  animate: "visible",
+  exit: "exit",
+  initial: "hidden",
   variants: {
     exit: {
       opacity: 0,
@@ -127,11 +127,11 @@ export const SLIDE_IN_ANIMATION_OPTIONS = {
       y: 0,
     },
   },
-};
+}
 
 export const SLIDE_DOWN_ANIMATION_OPTIONS = {
-  initial: 'collapsed',
-  exit: 'collapsed',
+  initial: "collapsed",
+  exit: "collapsed",
   transition: {
     duration: 0.2,
     ease: [0.04, 0.62, 0.23, 0.98],
@@ -148,26 +148,26 @@ export const SLIDE_DOWN_ANIMATION_OPTIONS = {
       display: `none`,
     },
   },
-};
+}
 
 export const SLIDE_ELEMENT_DOWN_ANIMATION = {
-  initial: 'collapsed',
-  exit: 'collapsed',
+  initial: "collapsed",
+  exit: "collapsed",
   variants: {
     collapsed: {
       height: 0,
       opacity: 0,
       transitionEnd: {
-        display: 'none',
+        display: "none",
       },
     },
     visible: {
       opacity: 1,
       height: `100%`,
-      display: 'initial',
+      display: "initial",
     },
   },
-};
+}
 
 export const BUTTON_ANIMATION = {
   whileHover: {
@@ -176,7 +176,7 @@ export const BUTTON_ANIMATION = {
   whileTap: {
     scale: 0.95,
   },
-};
+}
 
 export const MENU_OPEN_CLOSED_SLIDE_ANIMATION = {
   closed: {
@@ -184,7 +184,7 @@ export const MENU_OPEN_CLOSED_SLIDE_ANIMATION = {
     y: 20,
     // will not occupy space, and fades out when closing
     transitionEnd: {
-      display: 'none',
+      display: "none",
     },
     transition: {
       y: { stiffness: 1000 },
@@ -193,27 +193,27 @@ export const MENU_OPEN_CLOSED_SLIDE_ANIMATION = {
   open: {
     opacity: 1,
     y: 0,
-    display: 'grid',
+    display: "grid",
     transition: {
       y: { stiffness: 1000, velocity: -100 },
     },
   },
-};
+}
 
 export const WIDTHS = {
   md: 720,
   lg: `60rem`,
   xl: 1140,
-};
+}
 export const Z_INDEX = {
   HEADER: 1030,
   MOBILE_NAV_BUTTON: 1030 + 1,
   PAGE_CONTENT: 2,
-};
+}
 
 export const LIGHT_MODE_THEME = {
-  actionBackgroundColor: COLORS.terminalBackground,
-  actionColor: COLORS.terminalBackground,
+  actionBackgroundColor: COLORS.secondaryBackground,
+  actionColor: COLORS.secondaryBackground,
   backgroundColor: COLORS.white,
   backgroundContentColor: COLORS.white,
   color: COLORS.gray.light,
@@ -222,7 +222,8 @@ export const LIGHT_MODE_THEME = {
   navBackground: COLORS.palette.magnolia,
   resumeHeadingMobile: COLORS.gray.calm,
   resumeHeadingDesktop: COLORS.white,
-  terminalBackground: COLORS.terminalBackground,
+  secondaryBackground: COLORS.secondaryBackground,
+  secondaryColor: COLORS.white,
   themeToggleBackgroundColor: COLORS.darkBackground,
   themeToggleButtonColor: COLORS.darkActionColors,
   toggleSwitchActiveColor: COLORS.white,
@@ -246,10 +247,10 @@ export const LIGHT_MODE_THEME = {
     )`,
     filter: `progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4961",endColorstr="#ffffff",GradientType=1)`,
   },
-};
+}
 
 export const DARK_MODE_THEME = {
-  actionBackgroundColor: COLORS.terminalBackground,
+  actionBackgroundColor: COLORS.secondaryBackground,
   actionColor: COLORS.darkActionColors,
   backgroundColor: COLORS.darkBackground,
   backgroundContentColor: COLORS.lighterDarkBackground,
@@ -259,9 +260,10 @@ export const DARK_MODE_THEME = {
   navBackground: COLORS.lighterDarkBackground,
   resumeHeadingMobile: COLORS.white,
   resumeHeadingDesktop: COLORS.white,
-  terminalBackground: COLORS.lighterDarkBackground,
+  secondaryBackground: COLORS.lighterDarkBackground,
+  secondaryColor: COLORS.white,
   themeToggleBackgroundColor: COLORS.white,
-  themeToggleButtonColor: COLORS.terminalBackground,
+  themeToggleButtonColor: COLORS.secondaryBackground,
   toggleSwitchActiveColor: COLORS.lighterDarkBackground,
   white: COLORS.white,
   resumeHeading: {
@@ -283,14 +285,14 @@ export const DARK_MODE_THEME = {
     )`,
     filter: `progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4961",endColorstr="#373737",GradientType=1)`,
   },
-};
+}
 
 export const PIE_SERIES_COLORS = [
-  '#204051',
-  '#3b6978',
-  '#84a9ac',
-  '#cae8d5',
-  '#d4ded7',
-];
+  "#204051",
+  "#3b6978",
+  "#84a9ac",
+  "#cae8d5",
+  "#d4ded7",
+]
 
-export type ThemeType = typeof DARK_MODE_THEME;
+export type ThemeType = typeof DARK_MODE_THEME

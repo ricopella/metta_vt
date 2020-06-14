@@ -1,5 +1,6 @@
 import createPersistedState from 'use-persisted-state'
 import Footer from '../Footer'
+import Header from '../Header'
 import NORMALIZE from '../../styles/normalize'
 import React, { FC } from 'react'
 import SEO from '../SEO'
@@ -30,6 +31,7 @@ const Layout: FC<ILayout> = ({ children, title }) => {
       <ThemeContext.Provider value={{ isThemeDark, setIsThemeDark }}>
         <ThemeProvider theme={isThemeDark ? DARK_MODE_THEME : LIGHT_MODE_THEME}>
           <PageWrapper>
+            <Header />
             <Main>{children}</Main>
             <Footer />
           </PageWrapper>
