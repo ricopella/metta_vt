@@ -5,6 +5,10 @@ export const BORDERS = {
   large: `0.625rem 0.625rem 0 0`,
 }
 
+export const SPACING = {
+  s: `1rem`,
+}
+
 export const BREAKPOINTS = {
   xs: 0,
   mobileOnly: `25.875rem`,
@@ -19,38 +23,38 @@ export const BREAKPOINTS = {
 }
 
 export const COLORS = {
-  brand: "#663399",
+  brand: '#663399',
   darkBackground: `#121212`,
   lighterDarkBackground: `#373737`,
   darkActionColors: `#cac4f5`,
-  header: "rgba(255,255,255, .5)",
-  lilac: "#9d7cbf",
-  accent: "#ffb238",
-  success: "#37b635",
-  warning: "#ec1818",
+  header: 'rgba(255,255,255, .5)',
+  lilac: '#9d7cbf',
+  accent: '#ffb238',
+  success: '#37b635',
+  warning: '#ec1818',
   ui: {
-    bright: "#e0d6eb",
-    light: "#f5f3f7",
-    whisper: "#fbfafc",
+    bright: '#e0d6eb',
+    light: '#f5f3f7',
+    whisper: '#fbfafc',
   },
-  code: "#fcf6f0",
+  code: '#fcf6f0',
   homeBanner: `#275573`,
   gray: {
-    dark: "hsla(270, 17.119554496%, 0%, 0.92)",
-    copy: "hsla(270, 15.797828016000002%, 0%, 0.88)",
-    calm: "rgba(0, 0, 0, 0.54)",
-    light: "#737272",
+    dark: 'hsla(270, 17.119554496%, 0%, 0.92)',
+    copy: 'hsla(270, 15.797828016000002%, 0%, 0.88)',
+    calm: 'rgba(0, 0, 0, 0.54)',
+    light: '#737272',
   },
-  white: "#fff",
-  black: "#000",
-  limeGreen: "#43b743",
-  terminalHeader: "#e4e3e5",
-  secondaryBackground: "#4c4961",
-  terminalActionClose: "#f96256",
-  terminalActionMinimize: "#fdbc3d",
-  terminalActionExpand: "#2dbb41",
-  backgroundColor: "#f6f9fc",
-  teal: "#35feff",
+  white: '#fff',
+  black: '#000',
+  limeGreen: '#43b743',
+  terminalHeader: '#e4e3e5',
+  secondaryBackground: '#4c4961',
+  terminalActionClose: '#f96256',
+  terminalActionMinimize: '#fdbc3d',
+  terminalActionExpand: '#2dbb41',
+  backgroundColor: '#f6f9fc',
+  teal: '#35feff',
   palette: {
     eerieBlack: `#211A1D`,
     hanPurple: `#6320EE`,
@@ -86,7 +90,7 @@ export const DIMENSIONS: DimensionsType = {
 
 export const FONTS = {
   sansSerif:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
+    '"Source Sans Pro", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
   serif: 'Georgia, "Times New Roman", Times, serif',
   monospace:
     'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace',
@@ -110,9 +114,9 @@ export const SHADOWS = {
 }
 
 export const SLIDE_IN_ANIMATION_OPTIONS = {
-  animate: "visible",
-  exit: "exit",
-  initial: "hidden",
+  animate: 'visible',
+  exit: 'exit',
+  initial: 'hidden',
   variants: {
     exit: {
       opacity: 0,
@@ -130,8 +134,8 @@ export const SLIDE_IN_ANIMATION_OPTIONS = {
 }
 
 export const SLIDE_DOWN_ANIMATION_OPTIONS = {
-  initial: "collapsed",
-  exit: "collapsed",
+  initial: 'collapsed',
+  exit: 'collapsed',
   transition: {
     duration: 0.2,
     ease: [0.04, 0.62, 0.23, 0.98],
@@ -151,20 +155,20 @@ export const SLIDE_DOWN_ANIMATION_OPTIONS = {
 }
 
 export const SLIDE_ELEMENT_DOWN_ANIMATION = {
-  initial: "collapsed",
-  exit: "collapsed",
+  initial: 'collapsed',
+  exit: 'collapsed',
   variants: {
     collapsed: {
       height: 0,
       opacity: 0,
       transitionEnd: {
-        display: "none",
+        display: 'none',
       },
     },
     visible: {
       opacity: 1,
       height: `100%`,
-      display: "initial",
+      display: 'initial',
     },
   },
 }
@@ -184,7 +188,7 @@ export const MENU_OPEN_CLOSED_SLIDE_ANIMATION = {
     y: 20,
     // will not occupy space, and fades out when closing
     transitionEnd: {
-      display: "none",
+      display: 'none',
     },
     transition: {
       y: { stiffness: 1000 },
@@ -193,7 +197,7 @@ export const MENU_OPEN_CLOSED_SLIDE_ANIMATION = {
   open: {
     opacity: 1,
     y: 0,
-    display: "grid",
+    display: 'grid',
     transition: {
       y: { stiffness: 1000, velocity: -100 },
     },
@@ -247,6 +251,8 @@ export const LIGHT_MODE_THEME = {
     )`,
     filter: `progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4961",endColorstr="#ffffff",GradientType=1)`,
   },
+  spacing: SPACING,
+  media: BREAKPOINTS,
 }
 
 export const DARK_MODE_THEME = {
@@ -285,14 +291,8 @@ export const DARK_MODE_THEME = {
     )`,
     filter: `progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4961",endColorstr="#373737",GradientType=1)`,
   },
+  spacing: SPACING,
+  media: BREAKPOINTS,
 }
-
-export const PIE_SERIES_COLORS = [
-  "#204051",
-  "#3b6978",
-  "#84a9ac",
-  "#cae8d5",
-  "#d4ded7",
-]
 
 export type ThemeType = typeof DARK_MODE_THEME

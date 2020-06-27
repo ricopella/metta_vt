@@ -10,8 +10,8 @@ const HeaderElement = styled.header`
 `
 
 const HeaderTop = styled.div`
-  background-color: ${props => props.theme.secondaryBackground};
-  color: ${props => props.theme.secondaryColor};
+  background-color: ${(props) => props.theme.secondaryBackground};
+  color: ${(props) => props.theme.secondaryColor};
   display: grid;
   gap: 0.25rem 0;
   grid-template-columns: 1fr;
@@ -25,7 +25,7 @@ const HeaderTop = styled.div`
 const HeaderTopItem = styled.div``
 
 const Button = styled.button`
-  background-color: ${props => props.theme.white};
+  background-color: ${(props) => props.theme.white};
   border-radius: 0.1875rem;
   font-size: 1rem;
   padding: 0.5rem 2rem;
@@ -42,17 +42,17 @@ const Header: FC<{}> = () => {
         <HeaderTopItem>
           <b>Email: </b>
           <OutboundLink
-            color={"white"}
-            href={"mailto:jintina@mettavt.com"}
+            color={'white'}
+            href={'mailto:jintina@mettavt.com'}
             title="jintina@mettavt.com"
-            value={"jintina@mettavt.com"}
+            value={'jintina@mettavt.com'}
           />
         </HeaderTopItem>
         <HeaderTopItem>
           <b>Phone: </b>
           <OutboundLink
-            color={"white"}
-            href={"tel:+18021002000"}
+            color={'white'}
+            href={'tel:+18021002000'}
             title="8021002000"
             value={`1-802-100-2000`}
           />
@@ -60,14 +60,14 @@ const Header: FC<{}> = () => {
         <Button>
           <OutboundLink
             href={
-              "https://www.massagebook.com/Burlington~Massage~MettaHealingArtsandWellness?src=external#services"
+              'https://www.massagebook.com/Burlington~Massage~MettaHealingArtsandWellness?src=external#services'
             }
             title="Book an Appointment"
             value="Book an Appointment"
           />
         </Button>
       </HeaderTop>
-      <HeaderBottom />
+      <HeaderBottom></HeaderBottom>
     </HeaderElement>
   )
 }
