@@ -17,6 +17,21 @@ export interface DimensionsType {
   }
 }
 
+interface ServiceItem {
+  name: string
+  description?: string
+  subDescription?: string
+  variants: {
+    name: string
+    price: number
+  }[]
+}
+
+export interface ServiceCategory {
+  name: string
+  items: ServiceItem[]
+}
+
 export interface SiteMetaData {
   author: string
   description: string
