@@ -9,9 +9,11 @@ const SectionHeading = styled.h3``
 
 interface Props {}
 
+const PAGE_HEADING = `Massage Services`
+
 export default function Services({}: Props): ReactElement {
   return (
-    <Layout>
+    <Layout title={PAGE_HEADING}>
       <ServicesContainer>
         {CONFIG.SERVICES_CATEGORY_ITEMS.map((category) => (
           <>

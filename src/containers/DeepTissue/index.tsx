@@ -15,7 +15,7 @@ const PAGE_HEADING = `Deep Tissue Massage`
 
 export default function DeepTissue({}: Props): ReactElement {
   return (
-    <Layout>
+    <Layout title={PAGE_HEADING}>
       <PageHeading>{PAGE_HEADING}</PageHeading>
       <Image filename="placeholder1.png" />
       <PageSubHeading>Moving through the layers</PageSubHeading>
